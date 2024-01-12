@@ -1,0 +1,30 @@
+{
+  "name": "flutter-cli",
+  "version": "1.0.0",
+  "description": "Command line interface for rapid Flutter development",
+  "bin": {
+    "flt": "bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovelier/flutter-cli.git",
+    "directory": ""
+  },
+  "keywords": [
+    "flutter",
+    "flt",
+    "cli"
+  ],
+  "author": "Jay Hu",
+  "license": "MIT",
+  "scripts": {
+    "compile": "run compile",
+    "test": "run test",
+    "prepublish": "npm run compile && npm run test"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "minimist": "^1.2.8"
+  }
+}
